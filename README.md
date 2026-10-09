@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/7bf1af80-5d87-4a18-a681-eb0720d357d3
 Una vez que el entorno virtual esté activo, puedes lanzar la simulación ejecutando el script principal `pendulum.py`. Por defecto, se ejecutará en modo *headless* (sin ventana) y utilizará los parámetros de `config.json`.
 
 ```bash
-python3 pendulum.py
+python3 pendulum.py --render
 ```
 
 ### Parámetros en Línea de Comandos
