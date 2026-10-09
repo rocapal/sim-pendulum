@@ -1,3 +1,6 @@
+
+
+
 # Simulación de Péndulo Invertido con MuJoCo
 
 <p align="left">
@@ -35,9 +38,7 @@ source venv/bin/activate
 
 ## Ejecución de la Simulación
 
-<p align="center">
-  <video src="https://github.com/rocapal/sim-pendulum/raw/refs/heads/main/img/pole.mp4" width="800" controls autoplay loop muted></video>
-</p>
+https://github.com/user-attachments/assets/7bf1af80-5d87-4a18-a681-eb0720d357d3
 
 Una vez que el entorno virtual esté activo, puedes lanzar la simulación ejecutando el script principal `pendulum.py`. Por defecto, se ejecutará en modo *headless* (sin ventana) y utilizará los parámetros de `config.json`.
 
