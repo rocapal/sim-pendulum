@@ -1,0 +1,9 @@
+{
+  "control_hz": 150,
+  "simulation_duration_s": 60,
+  "perturbation": {
+    "interval_s": 5.0,
+    "min_rads": -1.0,
+    "max_rads": 1.0
+  }
+}

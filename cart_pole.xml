@@ -1,0 +1,23 @@
+<mujoco model="cart-pole">
+  <compiler coordinate="local" inertiafromgeom="true"/>
+  <option timestep="0.001" integrator="RK4" gravity="0 0 -9.81"/>
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.8 0.9 0.8" rgb2="0.7 0.8 0.7" width="512" height="512"/>
+    <material name="grid_mat" texture="grid" texrepeat="20 20"/>
+  </asset>
+  <worldbody>
+    <light pos="0 0 10"/>
+    <geom name="floor" type="plane" size="10 10 .1" material="grid_mat"/>
+    <body name="cart" pos="0 0 0.5">
+      <joint name="slider" type="slide" axis="1 0 0" limited="true" range="-5 5"/>
+      <geom type="box" size="0.2 0.1 0.1" rgba="0.7 0.7 0 1"/>
+      <body name="pole" pos="0 0 0">
+        <joint name="hinge" type="hinge" axis="0 1 0"/>
+        <geom type="cylinder" size="0.05 0.5" pos="0 0 0.5" rgba="0 0.7 0.7 1"/>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor joint="slider" name="slide_motor" ctrlrange="-100 100" gear="50"/>
+  </actuator>
+</mujoco>
