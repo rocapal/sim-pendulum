@@ -36,7 +36,7 @@ source venv/bin/activate
 ## Ejecución de la Simulación
 
 <p align="center">
-  <video src="img/pole.mp4" width="800" controls autoplay loop muted></video>
+  <video src="https://github.com/rocapal/sim-pendulum/raw/main/img/pole.mp4" width="800" controls autoplay loop muted></video>
 </p>
 
 Una vez que el entorno virtual esté activo, puedes lanzar la simulación ejecutando el script principal `pendulum.py`. Por defecto, se ejecutará en modo *headless* (sin ventana) y utilizará los parámetros de `config.json`.
