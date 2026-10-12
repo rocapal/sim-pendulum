@@ -134,10 +134,9 @@ def control_process(shared_state, control_force, running_flag, control_hz, confi
         now_ns = time.perf_counter_ns()
         sleep_time_s = (expected_time_ns - now_ns) / 1e9
         
-        if sleep_time_s > 0: 
-            tic = time.perf_counter_ns()            
+        if sleep_time_s > 0:                     
             time.sleep(sleep_time_s)
-            toc = time.perf_counter_ns()
+            
                         
                   
         actual_time_ns = time.perf_counter_ns()
