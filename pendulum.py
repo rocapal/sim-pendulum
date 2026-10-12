@@ -27,7 +27,8 @@ def physics_process(shared_state, control_force, running_flag, render_flag, cont
     data = mujoco.MjData(model)
     
     # Initialize the pendulum with a slight deviation so the controller has to act
-    data.qpos[1] = 0.05
+    time.sleep(0.1)
+    data.qpos[1] = 0.01
     
     start_time = time.perf_counter()
     last_perturbation_time = 0.0
